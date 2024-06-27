@@ -8,7 +8,7 @@ ENV \
 RUN yum install -y \
   cargo
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-RUN cargo install evcxr_jupyter --version 0.14.0 --root ~/.local
+RUN cargo install evcxr_jupyter --version 0.14.0
 RUN evcxr_jupyter --install
 
 USER 1001
