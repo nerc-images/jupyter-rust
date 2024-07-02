@@ -12,6 +12,10 @@ RUN cargo install evcxr_jupyter --version 0.14.0
 RUN evcxr_jupyter --install
 RUN mv /opt/app-root/src/.local/share/jupyter/kernels/rust /opt/app-root/share/jupyter/kernels/rust
 RUN rustup component add rust-src
+# Install pip dependencies
+RUN pip install \
+  bash_kernel
+RUN python -m bash_kernel.install
 
 
 USER 1001
