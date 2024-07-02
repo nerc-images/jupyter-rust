@@ -1,4 +1,4 @@
-# jupyter-cpp-cling
+# jupyter-rust
 
 An OpenShift AI Image running Jupyter Lab for Rust development.
 - Based on the [Evcxr project](https://github.com/evcxr/evcxr)
